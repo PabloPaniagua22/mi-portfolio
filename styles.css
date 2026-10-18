@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #222222;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilos para la sección "Header" */
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d34b3;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.encabezado h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 22px;
+    }
+}
+
+/* Estilos para la sección "Presentacion" */
+
+.presentacion {
+    background-color: #172033;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.presentacion .etiqueta {
+    color: #00c853;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.presentacion h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.presentacion .descripcion {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #3d34b3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #29227f;
+}
+
+@media (max-width: 600px) {
+    .presentacion {
+        padding: 50px 20px;
+    }
+
+    .presentacion h2 {
+        font-size: 28px;
+    }
+}
+
+/* Estilos para la sección "Sobre mí" */
+
+.sobre-mi {
+    background-color: #f4f5f7;
+    color: #222222;
+    padding: 60px 20px;
+}
+
+.sobre-mi h2 {
+    margin-top: 0;
+}
+
+.sobre-mi p {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Estilos para la sección "Proyectos" */
+.proyectos {
+    background-color: #e9ebef;
+    padding: 60px 20px;
+}
+
+.proyectos h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta-proyecto {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1 1 280px;
+    max-width: 400px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-proyecto h3 {
+    color: #3d34b3;
+    margin-top: 0;
+}
+
+.tarjeta-proyecto p {
+    line-height: 1.6;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tecnologias {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.enlaces-proyecto {
+    margin-top: 20px;
+}
+
+.enlaces-proyecto a {
+    display: inline-block;
+    background-color: #3d34b3;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.enlaces-proyecto a:hover {
+    background-color: #29227f;
+}
+
+/* Estilos para la sección "Contacto" */
+.contacto {
+    background-color: #172033;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-top: 0;
+}
+
+.contacto p {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    line-height: 1.7;
+}
+
+.boton-contacto,
+.enlace-linkedin {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.boton-contacto {
+    background-color: #3d34b3;
+    color: white;
+}
+
+.enlace-linkedin {
+    border: 1px solid white;
+    color: white;
+}
+
+.boton-contacto:hover,
+.enlace-linkedin:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para la sección "Footer" */
+.pie-pagina {
+    background-color: #101827;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
